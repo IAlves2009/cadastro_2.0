@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boots.css">
+    <link rel="stylesheet" href="bootw.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-none" id="mensagens">
+            <div class="col">
+                <div class="alert alert-danger">Cadastro incorreto</div>
+            </div>
+        </div>
+    
+        <div class="row" id="mensagens">
+            <div class="col-md-8">
+                <table class="table table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th>NOME</th>
+                            <th>TELEFONE</th>
+                            <th>EMAIL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista">
+                    <tr>
+                    
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4"></div>
+            <form>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+                <input type="text" class="form-control" id="email" placeholder="Email">
+                <button type="submit" id='btn_cadastrar' class="btn btn-primary">Cadastrar</button>
+                <input type="hidden" name="id_tmp" id="id_tmp">
+            </form>
+        </div>
+    </div>
+
+    <script src="boots.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
